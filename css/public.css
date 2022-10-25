@@ -1,0 +1,133 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans);
+
+:root {
+    --gray-coler-1: #f6f7f6;
+    --gray-coler-2: #e8e8e8;
+    --gray-coler-3: #d3d3d3;
+    --blue-coler-1: #0086cd;
+    --black-coler-1: #4c4c4c;
+
+}
+
+.bg-gray-coler-2 {
+    background-color: var(--gray-coler-2);
+}
+
+.bg-gray-coler-1 {
+    background-color: var(--gray-coler-1);
+}
+
+body {
+    background: #ffffff;
+    font-family: 'Open Sans', sans-serif;
+}
+
+@media only screen and (max-width : 320px) {
+
+    /* Styles */
+    html {
+        font-size: 15px !important;
+    }
+}
+
+@media only screen and (min-width : 320px) and (max-width : 480px) {
+
+    /* Styles */
+    html {
+        font-size: 18px !important;
+    }
+}
+
+
+@media only screen and (min-width : 480px) and (max-width : 768px) {
+
+    /* Styles */
+    html {
+        font-size: 18px !important;
+    }
+}
+
+@media only screen and (min-width : 768px) and (max-width : 1024px) {
+
+    /* Styles */
+    html {
+        font-size: 20px !important;
+    }
+}
+
+@media only screen and (min-width : 1024px) and (max-width : 1224px) {
+
+    /* Styles */
+    html {
+        font-size: 25px !important;
+    }
+}
+
+@media only screen and (min-width : 1224px) and (max-width : 1824px) {
+
+    /* Styles */
+    html {
+        font-size: 25px !important;
+    }
+}
+
+@media only screen and (min-width : 1824px) {
+
+    /* Styles */
+    html {
+        font-size: 30px !important;
+    }
+}
+
+.form_search {
+    background-color: var(--gray-coler-1);
+    position: absolute;
+    display: none;
+    opacity: 0;
+}
+
+.form_search_term {
+    width: 100%;
+    border: 0.07rem solid var(--gray-coler-2);
+    border-right: none;
+    padding: 0.2rem;
+    height: 1.4rem;
+    border-radius: 5px 0 0 5px;
+    outline: none;
+    color: #9DBFAF;
+    font-size: 0.6rem;
+}
+
+.form_search_term:focus {
+    color: var(--black-coler-1);
+}
+
+.form_search_button {
+    width: 1.8rem;
+    height: 1.4rem;
+    border: 1px solid var(--gray-coler-2);
+    background: var(--gray-coler-2);
+    text-align: center;
+    color: #fff;
+    border-radius: 0 5px 5px 0;
+    cursor: pointer;
+    font-size: 0.6rem;
+}
+
+.header-top {
+    border-bottom-width: 0.2rem;
+        border-bottom-style: solid;
+        border-image: linear-gradient(to bottom, #f6f7f6 89%, #e4e4e4 100%) 6;
+        padding-top: 0.1rem;
+}
+
+.form_search_button_hover{
+    width: 1.8rem;
+    height: 1.4rem;
+    border: transparent;
+    background-color: transparent;
+    text-align: center;
+    border-radius:5px;
+    cursor: pointer;
+    font-size: 0.6rem;
+}

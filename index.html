@@ -1,28 +1,108 @@
 <!DOCTYPE html>
 <html lang="vi">
+
     <head>
         <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+        <meta name="viewport" content="width=device-width, minimum-scale=1.0,
+            maximum-scale=1.0, user-scalable=no">
         <meta name="author" content="Phạm Nguyên Hồng đại học hạ long">
-        <meta name="description" content="Khoa CNTT là địa chỉ duy nhất đào tạo CNTT trình độ Đại học trên địa bàn Tỉnh. ">
-        <meta name="keywords" content="Đại học hạ long, Công nghệ thông tin đại học hạ long">
+        <meta name="description" content="Khoa CNTT là địa chỉ duy nhất đào tạo
+            CNTT trình độ Đại học trên địa bàn Tỉnh. ">
+        <meta name="keywords" content="Đại học hạ long, Công nghệ thông tin đại
+            học hạ long">
         <meta property="og:locale" content="vi_VN" />
         <meta property="og:type" content="website" />
-        <meta property="og:title" content="Đại học hạ long | khoa công nghệ thông tin" />
-        <meta property="og:description" content="Khoa CNTT là địa chỉ duy nhất đào tạo CNTT trình độ Đại học trên địa bàn Tỉnh. " />
+        <meta property="og:title" content="Đại học hạ long | khoa công nghệ
+            thông tin" />
+        <meta property="og:description" content="Khoa CNTT là địa chỉ duy nhất
+            đào tạo CNTT trình độ Đại học trên địa bàn Tỉnh. " />
         <meta property="og:url" content="https://hongichik.github.io/CNTTDaiHocHaLongUHL" />
-        <meta property="og:image" content="https://hongichik.github.io/CNTTDaiHocHaLongUHL/img/Logo-Dai-Hoc-Ha-Long-UHL-V.png" />
+        <meta property="og:image"
+            content="https://hongichik.github.io/CNTTDaiHocHaLongUHL/img/Logo-Dai-Hoc-Ha-Long-UHL-V.png" />
         <meta property="og:site_name" content="Trường đại học hạ long " />
         <meta name="twitter:card" content="summary_large_image" />
-        <meta name="twitter:title" content="Đại học hạ long | khoa công nghệ thông tin" />
-        <meta name="twitter:description" content="Khoa CNTT là địa chỉ duy nhất đào tạo CNTT trình độ Đại học trên địa bàn Tỉnh. " />
-        <meta name="twitter:image" content="https://hongichik.github.io/CNTTDaiHocHaLongUHL/img/Logo-Dai-Hoc-Ha-Long-UHL-V.png" />
+        <meta name="twitter:title" content="Đại học hạ long | khoa công nghệ
+            thông tin" />
+        <meta name="twitter:description" content="Khoa CNTT là địa chỉ duy nhất
+            đào tạo CNTT trình độ Đại học trên địa bàn Tỉnh. " />
+        <meta name="twitter:image"
+            content="https://hongichik.github.io/CNTTDaiHocHaLongUHL/img/Logo-Dai-Hoc-Ha-Long-UHL-V.png" />
         <meta name="theme-color" content="#0086cd" />
 
         <link rel="icon" type="image/x-icon" href="img/favicon.ico">
         <title>Đại học hạ long</title>
+
+        <!--start bootstrap -->
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
+            integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+        <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
+            integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+            crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+            integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+            crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.min.js"
+            integrity="sha384-+sLIOodYLS7CIrQpBjl+C7nPvqq+FbNUBDunl/OZv93DB7Ln/533i8e/mZXLi/P+"
+            crossorigin="anonymous"></script>
+        <!-- end bootstrap -->
+
+        <script src="https://code.jquery.com/jquery-3.6.1.js"
+            integrity="sha256-3zlB5s2uwoUzrXK3BT7AX3FyvojsraNFxCc2vC/7pNI=" crossorigin="anonymous"></script>
+        <script src="js/public.js"></script>
+
+        <link rel="stylesheet" href="css/public.css">
+        <link rel="stylesheet" href="css/home.css">
+
     </head>
-<body>
-    <h1 style="color: #0086cd;">Trường đại học hạ long</h1>
-</body>
+
+    <body>
+        <nav class="header">
+            <div class="header-top bg-gray-coler-1 d-flex
+                justify-content-center" style="height: 1.8rem;">
+                <div class="container d-flex justify-content-end" style="position: relative;">
+                    <div id="oke">nội dung ẩn</div>
+                    <div class="ml-2 m-0" style="background-color:
+                        var(--gray-coler-3); width: 0.1px;"></div>
+                    <button type="button" id="show_form_search" class="form_search_button_hover">
+                        <img src="img/icon/icons8-search.svg" style="height:
+                            1rem;" alt="icon-search">
+                    </button>
+                    <div class="form_search ml-2">
+                        <input type="text" class="form_search_term" placeholder="Bạn muốn tìm kiếm gì?">
+                        <button type="submit" class="form_search_button">
+                            <img src="img/icon/icons8-search.svg" style="height:
+                                1rem;" alt="icon-search">
+                        </button>
+                        <button type="button" id="close_form_search" class="form_search_button_hover">
+                            <img src="img/icon/icon_close.svg" style="height:
+                                1.25rem;" alt="icon-search">
+                        </button>
+                    </div>
+
+                </div>
+
+            </div>
+            <script>
+
+                $(document).ready(function () {
+                    $("#show_form_search").on("click", function (event) {
+                        //$( ".form_search" ).toggleClass( "d-none" )
+                        $( ".form_search" ).toggleClass( "d-flex" )
+                        $(".form_search").animate({ width: '12rem', opacity: 1 }, "slow");
+
+                    });
+                    $("#close_form_search").on("click", function (event) {
+                        $(".form_search").animate({ width: '0rem', opacity: 0 }, "slow")
+                            .queue(function () {
+                                $( ".form_search" ).toggleClass( "d-flex" ).dequeue();
+                            });
+                    });
+
+
+                });
+            </script>
+        </nav>
+        <h1 style="color: #0086cd; font-size: 1rem;">Trường đại học hạ long</h1>
+    </body>
+
 </html>
