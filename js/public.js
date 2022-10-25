@@ -1,11 +1,17 @@
 
-$(document).ready(function(){
+$(document).ready(function () {
+    $("#show_form_search").on("click", function (event) {
+        //$( ".form_search" ).toggleClass( "d-none" )
+        $(".form_search").toggleClass("d-flex")
+        $(".form_search").animate({ width: '14rem', opacity: 1 }, "slow");
 
-    var hiddenBox = $( "#form_search" );
-    $( ".show_form_search" ).on( "click", function( event ) {
-        hiddenBox.show();
-        alert("đã chạy");
-        console.log("oke");
     });
+    $("#close_form_search").on("click", function (event) {
+        $(".form_search").animate({ width: '0rem', opacity: 0 }, "slow")
+            .queue(function () {
+                $(".form_search").toggleClass("d-flex").dequeue();
+            });
+    });
+
 
 });

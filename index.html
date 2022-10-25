@@ -58,49 +58,98 @@
     <body>
         <nav class="header">
             <div class="header-top bg-gray-coler-1 d-flex
-                justify-content-center" style="height: 1.8rem;">
-                <div class="container d-flex justify-content-end" style="position: relative;">
-                    <div id="oke">nội dung ẩn</div>
-                    <div class="ml-2 m-0" style="background-color:
-                        var(--gray-coler-3); width: 0.1px;"></div>
-                    <button type="button" id="show_form_search" class="form_search_button_hover">
-                        <img src="img/icon/icons8-search.svg" style="height:
-                            1rem;" alt="icon-search">
-                    </button>
-                    <div class="form_search ml-2">
-                        <input type="text" class="form_search_term" placeholder="Bạn muốn tìm kiếm gì?">
-                        <button type="submit" class="form_search_button">
+                justify-content-center pt-1" style="height: 1.8rem;">
+                <div class="container d-flex justify-content-between" >
+                    <div class="d-flex">
+                        <p class="m-auto d-sm-flex d-none" style="font-size: 0.6rem;color: var(--blue-coler-2);">Đại học hạ long học để thành công</p>
+                    </div>
+                    <div class="d-flex justify-content-end" style="position: relative;">
+                        <div>
+                            <ul class="d-flex h-100 align-items-center" style="font-size: 0.6rem; list-style: none;">
+                                <li class="ml-1 mr-1"><a href="#">Thời khóa biểu</a></li>
+                                <li class="ml-1 mr-1"><a href="#">Tuyển dụng</a></li>
+                                <li class="ml-1 mr-1"><a href="#">Liên hệ</a></li>
+                            </ul>
+                        </div>
+                        <div class="ml-2 m-0" style="background-color:
+                            var(--gray-coler-3); width: 0.1px;"></div>
+                        <button type="button" id="show_form_search" class="form_search_button_hover">
                             <img src="img/icon/icons8-search.svg" style="height:
                                 1rem;" alt="icon-search">
                         </button>
-                        <button type="button" id="close_form_search" class="form_search_button_hover">
-                            <img src="img/icon/icon_close.svg" style="height:
-                                1.25rem;" alt="icon-search">
-                        </button>
+                        <div class="form_search ml-2">
+                            <input type="text" class="form_search_term" placeholder="Bạn muốn tìm kiếm gì?">
+                            <button type="submit" class="form_search_button">
+                                <img src="img/icon/icons8-search.svg" style="height:
+                                    1rem;" alt="icon-search">
+                            </button>
+                            <button type="button" id="close_form_search" class="form_search_button_hover">
+                                <img src="img/icon/icon_close.svg" style="height:
+                                    1.25rem;" alt="icon-search">
+                            </button>
+                        </div>
                     </div>
+
 
                 </div>
 
             </div>
-            <script>
+            <div class="d-flex">
+                <div class="container d-flex align-items-center justify-content-between">
+                    <div class="d-flex p-2">
+                        <img src="img/Logo-Dai-Hoc-Ha-Long-UHL.png" alt="icon đại học hạ long" style="height: 3rem;">
+                        <div class="ml-2 mr-2" style="width: 0.05rem; background-color: var(--blue-coler-1);"></div>
+                        <p class="mt-auto mb-auto"
+                            style="font-size: 0.7rem; font-weight: 900; color: var(--blue-coler-2);">Đại học hạ long
+                            <br> Khoa công nghệ thông tin
+                        </p>
+                    </div>
+                    <div class="d-md-flex d-none">
+                        <a href="#" class="d-flex p-2">
+                            <img src="img/icon/icon_email.png" alt="icon đại học hạ long" style="height: 1.7rem;">
+                            <div class="ml-1">
+                                <p class="mt-auto mb-auto"
+                                    style="font-size: 0.6rem; font-weight: 900; color: var(--blue-coler-2);">
+                                    Email
+                                </p>
+                                <p class="mt-auto mb-auto"
+                                    style="font-size: 0.5rem; font-weight: 900; color: var(--blue-coler-1);">
+                                    admin@gmail.com
+                                </p>
+                            </div>
 
-                $(document).ready(function () {
-                    $("#show_form_search").on("click", function (event) {
-                        //$( ".form_search" ).toggleClass( "d-none" )
-                        $( ".form_search" ).toggleClass( "d-flex" )
-                        $(".form_search").animate({ width: '12rem', opacity: 1 }, "slow");
+                        </a>
+                        <a href="#" class="d-flex p-2">
+                            <img src="img/icon/icon_phone.png" alt="icon liên hệ đại học hạ long" style="height: 1.7rem;">
+                            <div class="ml-1">
+                                <p class="mt-auto mb-auto"
+                                    style="font-size: 0.6rem; font-weight: 900; color: var(--blue-coler-2);">
+                                    Hotline
+                                </p>
+                                <p class="mt-auto mb-auto"
+                                    style="font-size: 0.5rem; font-weight: 900; color: var(--blue-coler-1);">
+                                    0987654321
+                                </p>
+                            </div>
 
-                    });
-                    $("#close_form_search").on("click", function (event) {
-                        $(".form_search").animate({ width: '0rem', opacity: 0 }, "slow")
-                            .queue(function () {
-                                $( ".form_search" ).toggleClass( "d-flex" ).dequeue();
-                            });
-                    });
+                        </a>
+                        <a href="#" class="d-flex p-2">
+                            <img src="img/icon/icons8-profile-64.png" alt="icon đại học hạ long" style="height: 1.7rem;">
+                            <div class="ml-1">
+                                <p class="mt-auto mb-auto"
+                                    style="font-size: 0.6rem; font-weight: 900; color: var(--blue-coler-2);">
+                                    Nộp hồ sơ
+                                </p>
+                                <p class="mt-auto mb-auto"
+                                    style="font-size: 0.5rem; font-weight: 900; color: var(--blue-coler-1);">
+                                    Online
+                                </p>
+                            </div>
 
-
-                });
-            </script>
+                        </a>
+                    </div>
+                </div>
+            </div>
         </nav>
         <h1 style="color: #0086cd; font-size: 1rem;">Trường đại học hạ long</h1>
     </body>

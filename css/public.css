@@ -5,6 +5,7 @@
     --gray-coler-2: #e8e8e8;
     --gray-coler-3: #d3d3d3;
     --blue-coler-1: #0086cd;
+    --blue-coler-2: #006296;
     --black-coler-1: #4c4c4c;
 
 }
@@ -130,4 +131,13 @@ body {
     border-radius:5px;
     cursor: pointer;
     font-size: 0.6rem;
+}
+
+a{
+    color: var(--blue-coler-2);
+    font-weight: 500;
+}
+a:hover{
+    text-decoration: none;
+    color: var(--blue-coler-1);
 }
