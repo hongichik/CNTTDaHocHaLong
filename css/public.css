@@ -242,7 +242,7 @@ h1 {
 }
 
 h2 {
-    font-size: 0.75rem;
+    font-size: 0.8rem;
     font-weight: 600;
 }
 
@@ -251,11 +251,17 @@ p {
 }
 
 h2 a {
-    font-size: 0.75rem;
+    font-size: 0.8rem;
     font-weight: 600;
 }
 
 h3 a {
     font-size: 0.65rem;
     font-weight: 600;
+}
+
+.span_time{
+    color: #757575;
+    font-style: italic;
+    font-size: 0.5rem!important;
 }
