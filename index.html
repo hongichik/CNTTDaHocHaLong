@@ -157,7 +157,7 @@
 					background-size: 100%;
 				"
 			>
-				<div class="d-flex pt-2 pr-2 justify-content-end pt-1 container">
+				<div class="d-flex pt-2 pr-2 justify-content-end pt-1 container-fluid px-3 px-xl-5">
 					<div class="d-flex">
 						<img
 							src="img/icon/icon_email.png"
@@ -190,7 +190,7 @@
 					</div>
 				</div>
 				<div class="d-md-flex d-none header-between">
-					<div class="container d-flex align-items-center justify-content-between">
+					<div class="container-fluid px-3 px-xl-5 d-flex align-items-center justify-content-between">
 						<div class="d-flex">
 							<img
 								src="img/Logo-Dai-Hoc-Ha-Long-UHL-V.png"
@@ -219,7 +219,7 @@
 					</div>
 				</div>
 				<div class="d-flex justify-content-center">
-					<div class="container d-flex justify-content-between">
+					<div class="container-fluid px-3 px-xl-5 d-flex justify-content-between">
 						<div></div>
 						<div class="d-flex justify-content-end" style="position: relative">
 							<ul class="d-flex m-0" style="list-style: none">
@@ -249,7 +249,7 @@
 								></div>
 							</div>
 
-							<button type="button" id="show_form_search" class="form_search_button_hover">
+							<button type="button" class="form_search_button_hover show_form_search">
 								<img src="img/icon/icons8-search.svg" style="height: 1rem" alt="icon-search" />
 							</button>
 							<div class="form_search ml-2 rounded">
@@ -257,7 +257,7 @@
 								<button type="submit" class="form_search_button">
 									<img src="img/icon/icons8-search.svg" style="height: 1rem" alt="icon-search" />
 								</button>
-								<button type="button" id="close_form_search" class="form_search_button_hover">
+								<button type="button" class="close_form_search form_search_button_hover">
 									<img src="img/icon/icon_close.svg" style="height: 1.25rem" alt="icon-search" />
 								</button>
 							</div>
@@ -266,9 +266,9 @@
 				</div>
 			</div>
 
-			<div class="navbar_header pl-2">
+			<div class="navbar_header">
 				<nav
-					class="container d-flex justify-content-between p-0 navbar navbar-expand-lg"
+					class="container-fluid px-3 px-xl-5 px-lg-1 d-flex justify-content-between p-0 navbar navbar-expand-lg"
 					style="font-size: 0.6rem"
 				>
 					<div class="d-lg-none d-flex justify-content-between w-100 py-2">
@@ -277,7 +277,7 @@
 								src="img/Logo-Dai-Hoc-Ha-Long-UHL-V.png"
 								alt="icon
                                 Đại học hạ long"
-								style="height: 2rem"
+								style="height: 1.9rem"
 							/>
 							<div
 								class="ml-2 mr-2"
@@ -285,13 +285,13 @@
 							></div>
 							<p
 								class="mt-auto mb-auto"
-								style="font-size: 0.6rem; font-weight: 900; color: var(--blue-coler-3)"
+								style="font-size: 0.4rem; font-weight: 900; color: var(--blue-coler-3)"
 							>
 								KHOA CÔNG NGHỆ THÔNG TIN <br />TRƯỜNG ĐẠI HỌC HẠ LONG
 							</p>
 						</div>
 						<div class="d-flex justify-content-center">
-							<div class="container d-flex justify-content-between">
+							<div class="container-fluid px-3 px-xl-5 d-flex justify-content-between">
 								<div></div>
 								<div class="d-none d-sm-flex justify-content-end" style="position: relative">
 									<ul class="d-flex m-0" style="list-style: none">
@@ -320,14 +320,19 @@
 											style="width: 0.05rem; height: 1rem; background-color: var(--blue-coler-1)"
 										></div>
 									</div>
-									<div class="d-flex">
-										<button type="button" class="form_search_button_hover m-auto">
-											<img
-												src="img/icon/icons8-search.svg"
-												style="height: 1rem"
-												alt="icon-search"
-											/>
+									<div class="d-flex flex-row-reverse">
+										<button type="button" class="form_search_button_hover show_form_search">
+											<img src="img/icon/icons8-search.svg" style="height: 1rem" alt="icon-search" />
 										</button>
+										<div class="form_search ml-2 rounded">
+											<input type="text" class="form_search_term" placeholder="Bạn muốn tìm kiếm gì?" />
+											<button type="submit" class="form_search_button">
+												<img src="img/icon/icons8-search.svg" style="height: 1rem" alt="icon-search" />
+											</button>
+											<button type="button"class="close_form_search form_search_button_hover">
+												<img src="img/icon/icon_close.svg" style="height: 1.25rem" alt="icon-search" />
+											</button>
+										</div>
 									</div>
 								</div>
 								<button
@@ -346,7 +351,7 @@
 					</div>
 
 					<div class="collapse navbar-collapse nav_item" id="navbarSupportedContent">
-						<ul class="navbar-nav mr-auto pl-2">
+						<ul class="navbar-nav mr-auto">
 							<div class="d-flex d-sm-none justify-content-end" style="position: relative">
 								<ul class="d-flex m-0" style="list-style: none">
 									<li class="px-2 d-flex">
@@ -374,20 +379,29 @@
 										style="width: 0.05rem; height: 1rem; background-color: var(--blue-coler-1)"
 									></div>
 								</div>
-								<div class="d-flex">
-									<button type="button" class="form_search_button_hover m-auto">
-										<img src="img/icon/icons8-search.svg" style="height: 1rem" alt="icon-search" />
-									</button>
+								<div class="d-flex flex-row-reverse">
+							<button type="button" class="form_search_button_hover show_form_search">
+								<img src="img/icon/icons8-search.svg" style="height: 1rem" alt="icon-search" />
+							</button>
+							<div class="form_search ml-2 rounded">
+								<input type="text" class="form_search_term" placeholder="Bạn muốn tìm kiếm gì?" />
+								<button type="submit" class="form_search_button">
+									<img src="img/icon/icons8-search.svg" style="height: 1rem" alt="icon-search" />
+								</button>
+								<button type="button" class="close_form_search form_search_button_hover">
+									<img src="img/icon/icon_close.svg" style="height: 1.25rem" alt="icon-search" />
+								</button>
+							</div>
 								</div>
 							</div>
 							<li class="nav-item active">
-								<a class="nav-link nav-link-father" href="#">Trang chủ</a>
+								<a class="nav-link nav-link-father px-lg-1 p-xl-2 p-2 " href="./index.html">Trang chủ</a>
 							</li>
 							<div class="m-0" style="width: 0.05rem; background-color: var(--blue-coler-1)"></div>
 							<li class="nav-item dropdown">
 								<a
-									class="nav-link nav-link-father"
-									href="#"
+									class="nav-link nav-link-father px-lg-1 p-xl-2 p-2"
+									href="./page.html"
 									role="button"
 									data-toggle="dropdown"
 									aria-expanded="false"
@@ -395,15 +409,15 @@
 									Giới thiệu
 								</a>
 								<div class="dropdown-menu">
-									<a class="dropdown-item nav-link-child" href="#">Lịch sử hình thành khoa</a>
-									<a class="dropdown-item nav-link-child" href="#">Sứ mệnh tầm nhìn</a>
-									<a class="dropdown-item nav-link-child" href="#">Cơ cấu tổ chức</a>
+									<a class="dropdown-item nav-link-child" href="./page.html">Lịch sử hình thành khoa</a>
+									<a class="dropdown-item nav-link-child" href="./page.html">Sứ mệnh tầm nhìn</a>
+									<a class="dropdown-item nav-link-child" href="./page.html">Cơ cấu tổ chức</a>
 								</div>
 							</li>
 							<div class="m-0" style="width: 0.05rem; background-color: var(--blue-coler-1)"></div>
 							<li class="nav-item dropdown">
 								<a
-									class="nav-link nav-link-father"
+									class="nav-link nav-link-father px-lg-1 p-xl-2 p-2"
 									href="#"
 									role="button"
 									data-toggle="dropdown"
@@ -420,7 +434,7 @@
 							<div class="m-0" style="width: 0.05rem; background-color: var(--blue-coler-1)"></div>
 							<li class="nav-item dropdown">
 								<a
-									class="nav-link nav-link-father"
+									class="nav-link nav-link-father px-lg-1 p-xl-2 p-2"
 									href="#"
 									role="button"
 									data-toggle="dropdown"
@@ -441,12 +455,12 @@
 							</li>
 							<div class="m-0" style="width: 0.05rem; background-color: var(--blue-coler-1)"></div>
 							<li class="nav-item">
-								<a class="nav-link nav-link-father" href="#">Thông tin tuyển sinh</a>
+								<a class="nav-link nav-link-father px-lg-1 p-xl-2 p-2" href="#">Thông tin tuyển sinh</a>
 							</li>
 							<div class="m-0" style="width: 0.05rem; background-color: var(--blue-coler-1)"></div>
 							<li class="nav-item dropdown">
 								<a
-									class="nav-link nav-link-father"
+									class="nav-link nav-link-father px-lg-1 p-xl-2 p-2"
 									href="#"
 									role="button"
 									data-toggle="dropdown"
@@ -464,7 +478,7 @@
 							</li>
 							<div class="m-0" style="width: 0.05rem; background-color: var(--blue-coler-1)"></div>
 							<li class="nav-item">
-								<a class="nav-link nav-link-father" href="#">Liên hệ</a>
+								<a class="nav-link nav-link-father px-lg-1 p-xl-2 p-2" href="./contact.html">Liên hệ</a>
 							</li>
 							<div class="m-0" style="width: 0.05rem; background-color: var(--blue-coler-1)"></div>
 						</ul>
@@ -474,7 +488,7 @@
 								style="width: 0.05rem; background-color: var(--blue-coler-1)"
 							></div>
 							<div class="nav-item">
-								<a class="nav-link nav-link-father px-2" href="#">Đăng nhập</a>
+								<a class="nav-link nav-link-father px-lg-1 p-xl-2 p-2 px-2" href="#">Đăng nhập</a>
 							</div>
 							<div
 								class="m-0 d-none d-lg-block"
@@ -531,7 +545,7 @@
 			</div>
 		</nav>
 		<nav class="d-flex flex-column py-3" style="background-color: rgb(247, 251, 255)">
-			<div class="d-flex flex-wrap container-xl">
+			<div class="d-flex flex-wrap container-fluid px-3 px-xl-5">
 				<div class="col-lg-9 col-12 px-0 pt-2 d-flex flex-column">
 					<h1 class="txt-blue-2">Tin tức</h1>
 					<div class="d-flex flex-column">
@@ -913,7 +927,7 @@
 			</div>
 		</nav>
 		<nav class="pt-3 pb-4">
-			<div class="container d-flex flex-column">
+			<div class="container-fluid px-3 px-xl-5 d-flex flex-column">
 				<h1 class="txt-blue-3 text-center pt-3">Chương trình đào tạo</h1>
 				<div class="underlined_div"></div>
 				<p class="text-center txt-blue-3 mt-3">
@@ -995,7 +1009,7 @@
 			</div>
 		</nav>
 		<nav class="pt-3 pb-4" style="background-color: rgb(247, 251, 255)">
-			<div class="container d-flex flex-column">
+			<div class="container-fluid px-3 px-xl-5 d-flex flex-column">
 				<h1 class="txt-blue-3 text-center pt-3">Thông tin tuyển sinh</h1>
 				<div class="underlined_div"></div>
 				<div class="mt-3 d-flex flex-wrap">
@@ -1088,7 +1102,7 @@
 		<nav class="d-flex flex-column py-3">
 			<h1 class="txt-blue-3 text-center pt-3">Các hoạt động và sự kiện</h1>
 			<div class="underlined_div"></div>
-			<div class="d-flex flex-wrap container pt-4">
+			<div class="d-flex flex-wrap container-fluid px-3 px-xl-5 pt-4">
 				<div class="col-md-7 col-12 px-0 pt-2 d-flex flex-column">
 					<h1 class="txt-blue-2">Các hoạt động</h1>
 
